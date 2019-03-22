@@ -15,3 +15,6 @@ Para remover arquivos de build rode o comando no diretório do projeto:
 ```bash
 make clean
 ```
+### Links úteis
+- Lista de símbolos:        https://en.wikibooks.org/wiki/LaTeX/Mathematics#List_of_mathematical_symbols
+- Símbolos por desenho:     http://detexify.kirelabs.org/classify.html
