@@ -1,0 +1,98 @@
+\ProvidesPackage{config}
+
+\usepackage[%
+	left	=2.5cm	,%
+	top		=3cm	,%
+	right	=2.5cm	,%
+	bottom	=2cm	%
+	]{geometry}			% page borders
+\usepackage{adforn}					% ????
+\usepackage{amsfonts}               % \mathbb
+\usepackage{amsthm}                 % proof environment
+\usepackage{amssymb}                % \subsetneq
+\usepackage[fleqn]{amsmath}         % fleqn: align equations left
+\usepackage[portuguese]{babel}		% ????
+\usepackage{biblatex}				% ????
+\usepackage{caption}                % change caption separator, \captionsetup
+\usepackage{chngcntr} 				% ????
+\usepackage{commath}                % \abs
+\usepackage[shortlabels]{enumitem}  % enumerate properties, enumerate-like scheme for labels
+\usepackage{environ}                % nofleq
+\usepackage{float}                  % change float (image table etc) separator
+\usepackage{framed}					% ????
+\usepackage{graphicx}               % image inserting
+\usepackage{hyperref}               % hyperlinks
+\usepackage{import}                 % nested \input issues
+\usepackage[utf8]{inputenc}         % portuguese
+\usepackage[makeroom]{cancel}		% \cancel 
+\usepackage{ragged2e}				% text aligning
+\usepackage{setspace}				% need this to change line spacing
+\usepackage{siunitx}				% degree symbol
+\usepackage{standalone}				% deal with problems when having multiple preambles
+\usepackage{textcomp}				% \textdegree
+\usepackage{verbatim}				% multiline comments
+
+%
+%	environments
+%		solucao:	soluções de exercícios
+%
+\newenvironment{solution}{\textit{Solução.}}{}
+
+%
+%	formatação de links
+%
+\newcommand{\link}[2]{\href{#1}{\tt{#2}}}
+\newcommand{\khan}[2]{\href{#1}{\tt{#2}}}
+
+%
+%	comandos de escrita
+%
+\newcommand{\tdeg}{\textdegree}					% alias para textdegree
+\newcommand{\sub}[1]{\underline{#1}}			% alias para subescrito
+\newcommand{\textdef}[1]{\textit{#1}}			% foco em texto de definições
+\newcommand{\prn}[1]{\left(#1\right)}			% parenteses
+\newcommand{\sse}{\text{ se, e somente se, }}	% se e somente se
+
+%
+%	comandos para teoria de conjuntos
+%
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\I}{\mathcal I}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\nnats}{\N^*}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\Z}{\mathbb{Z}}
+
+%
+%	comandos já existentes:
+%		\set:    define conjutos
+%
+\newcommand{\st}{\;;\;}
+\newcommand{\powerset}[1]{\mathcal{P}(#1)}
+
+%
+%	mesmos comandos em português
+%
+\newcommand{\conjunto}[1]{\set{#1}}
+\newcommand{\tq}{\st}
+\newcommand{\talque}{\st}
+ 
+%
+%	relaçoes e operações
+%		\in e \notin:		pertinência
+%		\subset: 			inclusão
+%
+\newcommand{\notsubset}{\not\subset}
+
+%
+%	mesmos comandos em português
+%
+\newcommand{\pertence}{\in}
+\newcommand{\contido}{\subset}
+
+%
+% funçõs reais
+%
+\newcommand{\modulo}[1]{\left|#1\right|}
