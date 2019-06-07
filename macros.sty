@@ -10,9 +10,8 @@
 %   Utilitários
 %
 \newcommand{\conjunto}[1]{\left\{#1\right\}}
-\newcommand{\tq}{\mid}
-\newcommand{\talque}{\tq}
-\newcommand{\sse}{\ensuremath{\Longleftrightarrow}\;}
+\newcommand{\talque}{\mid}
+\newcommand{\tq}{\talque}
 \newcommand{\diferente}{\neq}
 \newcommand{\linha}{\prime}
 \newcommand{\caligrafico}[1]{\ensuremath{\mathcal{#1}}}
@@ -23,8 +22,6 @@
 %
 %	Operações e relações
 %
-\renewcommand{\em}{\in}
-\renewcommand{\do}{\in}
 \newcommand{\no}{\in}
 \newcommand{\possui}{\ni}
 \newcommand{\nao}{\not}
@@ -36,10 +33,9 @@
 \newcommand{\Uniao}{\bigcup}
 \newcommand{\inter}{\cap}
 \newcommand{\Inter}{\bigcap}
-\newcommand{\complemento}[1]{\widetilde{#1}}
+\newcommand{\complemento}[1]{{#1}^{C}}
 \newcommand{\menos}{\setminus}
 \newcommand{\partes}[1]{\caligrafico{P}\left(#1\right)}
-\newcommand{\familia}[1]{\conjunto{#1_{i}}_{i}}
 \newcommand{\cartesiano}{\times}
 
 %
@@ -65,3 +61,4 @@
 \newcommand{\implica}{\implies}
 \newcommand{\somentese}{\ensuremath\implies}
 \newcommand{\se}{\ensuremath\impliedby}
+\newcommand{\sse}{\ensuremath{\Longleftrightarrow}\;}
